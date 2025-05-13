@@ -1,0 +1,28 @@
+.Home {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.Home > h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.Home > div {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Home > div > h1 {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.Home > div > h2 {
+    color: #999;
+    font-style: italic;
+}

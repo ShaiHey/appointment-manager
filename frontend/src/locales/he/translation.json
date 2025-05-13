@@ -1,0 +1,19 @@
+{
+    "home": "דף הבית",
+    "hello": "שלום",
+    "logout": "התנתקות",
+    "appointments": "פגישות",
+    "next_appointment": "הפגישה הבאה",
+    "no_next_appointment": "אין לך פגישות עתידיות",
+    "filter": "סינון",
+    "all_appointments": "כל הפגישות",
+    "upcoming": "פגישות עתידיות",
+    "past": "פגישות עבר",
+    "search_appointments": "חיפוש פגישות",
+    "sort_by": "מיין לפי",
+    "date": "תאריך",
+    "client_name": "שם הלקוח",
+    "no_appointments_found": "לא נמצאו פגישות",
+    "no_matching_appointments": "אין פגישות תואמות",
+    "no_appointments_yet": "אין לך פגישות כרגע"
+}

@@ -1,0 +1,19 @@
+{
+    "home": "Accueil",
+    "hello": "Bonjour",
+    "logout": "Déconnexion",
+    "appointments": "Rendez-vous",
+    "next_appointment": "Prochain rendez-vous",
+    "no_next_appointment": "Vous n'avez pas de rendez-vous à venir !",
+    "filter": "Filtrer",
+    "all_appointments": "Tous les rendez-vous",
+    "upcoming": "À venir",
+    "past": "Passés",
+    "search_appointments": "Rechercher un rendez-vous",
+    "sort_by": "Trier par",
+    "date": "Date",
+    "client_name": "Nom du client",
+    "no_appointments_found": "Aucun rendez-vous trouvé",
+    "no_matching_appointments": "Aucun rendez-vous correspondant",
+    "no_appointments_yet": "Vous n'avez pas encore de rendez-vous"
+}

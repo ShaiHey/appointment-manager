@@ -1,0 +1,154 @@
+.List {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.List h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #666;
+    font-weight: 500;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px dashed #dee2e6;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.List .Card {
+    animation: fadeSlideIn 0.3s ease-out;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.List .Card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.List-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+}
+
+.List-filter,
+.List-sort {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.List-filter label,
+.List-sort label {
+    font-weight: 500;
+    color: #555;
+}
+
+.List-filter select,
+.List-sort select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.List-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    max-width: 350px;
+}
+
+.List-search input {
+    width: 100%;
+    padding: 8px 12px;
+    padding-left: 35px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.List-search::before {
+    content: "🔍";
+    position: absolute;
+    left: 10px;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.List-empty {
+    grid-column: 1 / -1;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px dashed #dee2e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.List-empty h2 {
+    color: #666;
+    margin-bottom: 15px;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.List-empty p {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.List-empty button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.List-empty button:hover {
+    background-color: #0069d9;
+}
+
+@media (max-width: 768px) {
+    .List {
+        grid-template-columns: 1fr;
+    }
+    
+    .List-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .List-search {
+        max-width: none;
+    }
+}

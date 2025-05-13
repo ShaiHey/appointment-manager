@@ -1,0 +1,19 @@
+{
+    "home": "Home",
+    "hello": "Hello",
+    "logout": "Logout",
+    "appointments": "Appointments",
+    "next_appointment": "Next appointment",
+    "no_next_appointment": "You don't have any upcoming appointments!",
+    "filter": "Filter",
+    "all_appointments": "All appointments",
+    "upcoming": "Upcoming",
+    "past": "Past",
+    "search_appointments": "Search appointments",
+    "sort_by": "Sort by",
+    "date": "Date",
+    "client_name": "Client name",
+    "no_appointments_found": "No appointments found",
+    "no_matching_appointments": "No matching appointments",
+    "no_appointments_yet": "You don't have any appointments yet"
+}

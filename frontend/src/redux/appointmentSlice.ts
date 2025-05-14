@@ -37,10 +37,13 @@ export const appointmentSlice = createSlice({
             if(index > -1) {
                 state.appointments[index] = action.payload
             }
-        }
+        },
+        deleteApp: (state, action: PayloadAction<{id: string}>) => {
+            state.appointments = state.appointments.filter(a => a.id !== action.payload.id)
+        },
     }
 })
 
-export const { init, add, update } = appointmentSlice.actions;
+export const { init, add, update, deleteApp } = appointmentSlice.actions;
 
 export default appointmentSlice.reducer;

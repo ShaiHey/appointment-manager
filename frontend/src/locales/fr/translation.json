@@ -15,5 +15,15 @@
     "client_name": "Nom du client",
     "no_appointments_found": "Aucun rendez-vous trouvé",
     "no_matching_appointments": "Aucun rendez-vous correspondant",
-    "no_appointments_yet": "Vous n'avez pas encore de rendez-vous"
+    "no_appointments_yet": "Vous n'avez pas encore de rendez-vous",
+    "finished_and_pay": "Terminé et payé",
+    "finished_not_pay": "Terminé mais non payé",
+    "paid": "Rendez-vous payant",
+    "marked_finished": "Marquer comme terminé",
+    "marked_pay": "Marquer comme payé",
+    "marked_finished_and_pay": "Marquer comme terminé et payé",
+    "delete_appointment": "Supprimer le rendez-vous",
+    "pay": "Payé",
+    "finished": "Terminé",
+    "pending": "En attente"
 }

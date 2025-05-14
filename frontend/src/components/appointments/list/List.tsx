@@ -38,6 +38,12 @@ function List(): JSX.Element {
                 filtered = filtered.filter(a => new Date(a.startDate) > now);
             } else if (filterBy === 'past') {
                 filtered = filtered.filter(a => new Date(a.startDate) <= now);
+            } else if(filterBy === 'finished-and-pay') {
+                filtered = filtered.filter(a => a.finished && a.pay);
+            } else if(filterBy === 'finished-not-pay') {
+                filtered = filtered.filter(a => a.finished && !a.pay);
+            } else if(filterBy === 'paid') {
+                filtered = filtered.filter(a => a.paid);
             }
         }
 
@@ -70,8 +76,11 @@ function List(): JSX.Element {
                         onChange={(e) => setFilterBy(e.target.value)}
                     >
                         <option value="all">{t('all_appointments')}</option>
+                        <option value="paid">{t('paid')}</option>
                         <option value="upcoming">{t('upcoming')}</option>
                         <option value="past">{t('past')}</option>
+                        <option value="finished-not-pay">{t('finished_not_pay')}</option>
+                        <option value="finished-and-pay">{t('finished_and_pay')}</option>
                     </select>
                 </div>
 

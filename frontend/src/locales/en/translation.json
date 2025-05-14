@@ -15,5 +15,15 @@
     "client_name": "Client name",
     "no_appointments_found": "No appointments found",
     "no_matching_appointments": "No matching appointments",
-    "no_appointments_yet": "You don't have any appointments yet"
+    "no_appointments_yet": "You don't have any appointments yet",
+    "finished_and_pay": "Finished and paid",
+    "finished_not_pay": "Finished but not paid",
+    "paid": "Paid appointment",
+    "marked_finished": "Mark as finished",
+    "marked_pay": "Mark as paid",
+    "marked_finished_and_pay": "Mark as finished and paid",
+    "delete_appointment": "Delete appointment",
+    "pay": "Paid",
+    "finished": "Finished",
+    "pending": "Pending"
 }

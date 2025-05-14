@@ -15,5 +15,15 @@
     "client_name": "שם הלקוח",
     "no_appointments_found": "לא נמצאו פגישות",
     "no_matching_appointments": "אין פגישות תואמות",
-    "no_appointments_yet": "אין לך פגישות כרגע"
+    "no_appointments_yet": "אין לך פגישות כרגע",
+    "finished_and_pay": "הסתיים ושולם",
+    "finished_not_pay": "הסתיים אך לא שולם",
+    "paid": "תור בתשלום",
+    "marked_finished": "סמן כהושלם",
+    "marked_pay": "סמן כשולם",
+    "marked_finished_and_pay": "סמן כהושלם וכשולם",
+    "delete_appointment": "מחק פגישה",
+    "pay": "שולם",
+    "finished": "הסתיים",
+    "pending": "ממתין"
 }

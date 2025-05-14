@@ -1,5 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { AppointmentModel } from "../../models/appointment";
+import status from "http-status";
+import AppError from "../../errors/app-error";
 
 export async function getAll(req: Request, res: Response, next: NextFunction) {
     try {
@@ -54,6 +56,24 @@ export async function update(req: Request<{appointmentId: string}, {}, {
         await appointment.save();
 
         res.json(appointment.toObject())
+    } catch (error) {
+        next(error)
+    }
+}
+
+
+export async function deleteAppointment(req: Request<{appointmentId: string}>, res: Response, next: NextFunction) {
+    try {
+        const deleteResponse = await AppointmentModel.deleteOne({ _id: req.params.appointmentId })
+
+        if(deleteResponse.deletedCount === 0) return next(new AppError(
+            status.NOT_FOUND,
+            "The appointment you were trying to delete does not exist"
+        ))
+
+        res.json({
+            success: true
+        })
     } catch (error) {
         next(error)
     }

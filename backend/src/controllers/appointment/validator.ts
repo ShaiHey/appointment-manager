@@ -17,3 +17,5 @@ export const updateAppointmentValidator = Joi.object({
     pay: Joi.boolean().optional(),
     finished: Joi.boolean().optional()
 })
+
+export const deleteAppointmentParamsValidator = updateAppointmentParamsValidator;

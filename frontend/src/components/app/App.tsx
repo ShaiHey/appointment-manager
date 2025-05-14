@@ -13,8 +13,8 @@ function App(): JSX.Element {
 
   useEffect(() => {
     const isRTL = i18n.language === 'he';
-    document.body.dir = isRTL ? 'rtl' : 'ltr'; // définit la direction HTML
-    document.body.classList.toggle('rtl', isRTL); // classe CSS optionnelle
+    document.body.dir = isRTL ? 'rtl' : 'ltr';
+    document.body.classList.toggle('rtl', isRTL);
   }, [i18n.language]);
 
   return (

@@ -25,5 +25,17 @@
     "delete_appointment": "מחק פגישה",
     "pay": "שולם",
     "finished": "הסתיים",
-    "pending": "ממתין"
+    "pending": "ממתין",
+    "clientName": "שם הלקוח",
+    "clientName_required": "יש להזין את שם הלקוח",
+    "infos": "פרטים",
+    "infos_required": "יש להזין פרטים",
+    "startDate": "תאריך ושעת התחלה",
+    "startDate_required": "יש להזין תאריך ושעת התחלה",
+    "endDate": "תאריך ושעת סיום",
+    "endDate_required": "יש להזין תאריך ושעת סיום",
+    "price": "מחיר",
+    "price_required": "יש להזין מחיר",
+    "add_appointment": "הוסף פגישה",
+    "free": "חינם"
 }

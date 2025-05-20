@@ -9,6 +9,7 @@ class AppointmentService extends AuthAware {
     }
 
     async create(draft: AppointmentDraft): Promise<Appointment> {
+        if(!draft.price) delete draft.price;
         const response = await this.axiosInstance.post<Appointment>(`${import.meta.env.VITE_REST_SERVER_URL}/appointment`, draft);
         return response.data;
     }

@@ -65,9 +65,8 @@ function Card({ appointment }: PropsCard): JSX.Element {
 
             <small>{startDateFormat}</small>
             <p>{appointment.infos}</p>
-            {appointment.paid &&
-                <div className='price'>{formattedPrice}</div>
-            }
+            <div className='price'>{appointment.paid ? formattedPrice : t('free')}</div>
+            
             <div className='actions'>
                 {!appointment.finished && <button className='finished' onClick={finished}>{t('marked_finished')}</button>}
                 {!appointment.pay && <button className='pay' onClick={pay}>{t('marked_pay')}</button>}

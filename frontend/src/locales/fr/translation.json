@@ -25,5 +25,17 @@
     "delete_appointment": "Supprimer le rendez-vous",
     "pay": "Payé",
     "finished": "Terminé",
-    "pending": "En attente"
+    "pending": "En attente",
+    "clientName": "Nom du client",
+    "clientName_required": "Le nom du client est requis",
+    "infos": "Détails",
+    "infos_required": "Les détails sont requis",
+    "startDate": "Date et heure de début",
+    "startDate_required": "La date et l'heure de début sont requises",
+    "endDate": "Date et heure de fin",
+    "endDate_required": "La date et l'heure de fin sont requises",
+    "price": "Prix",
+    "price_required": "Le prix est requis",
+    "add_appointment": "Ajouter un rendez-vous",
+    "free": "Gratuit"
 }

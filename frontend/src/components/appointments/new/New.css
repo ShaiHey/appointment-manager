@@ -1,0 +1,94 @@
+.New {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.New form {
+  display: flex;
+  flex-direction: column;
+}
+
+.New label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+.New label:first-child {
+  margin-top: 0;
+}
+
+.New input[type="text"],
+.New input[type="datetime-local"],
+.New input[type="number"],
+.New textarea {
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  color: #444;
+  background-color: #fafafa;
+}
+
+.New textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.New input[type="text"]:focus,
+.New input[type="datetime-local"]:focus,
+.New input[type="number"]:focus,
+.New textarea:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+  background-color: #fff;
+}
+
+.New input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 8px;
+  accent-color: #2196f3;
+  cursor: pointer;
+}
+
+.New .error {
+  color: #f44336;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  min-height: 18px;
+}
+
+.New button[type="submit"] {
+  margin-top: 24px;
+  padding: 12px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: flex-end;
+}
+
+.New button[type="submit"]:hover {
+  background-color: #1976d2;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.New button[type="submit"]:active {
+  transform: translateY(0);
+}

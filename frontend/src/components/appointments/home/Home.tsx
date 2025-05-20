@@ -15,7 +15,7 @@ function Home(): JSX.Element {
     const dispatch = useAppDispatch()
     const appointmentService = useService(AppointmentService)
 
-    useTitle("Appointment Manager - Home")
+    useTitle(`Appointment Manager - ${t('home')}`)
 
     useEffect(() => {
         appointmentService.getAll()

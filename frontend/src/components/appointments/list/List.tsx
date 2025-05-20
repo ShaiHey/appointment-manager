@@ -7,12 +7,15 @@ import useService from '../../../hooks/useService';
 import AppointmentService from '../../../services/appointment';
 import { init } from '../../../redux/appointmentSlice';
 import { ToastContainer, toast } from 'react-toastify';
+import useTitle from '../../../hooks/useTitle';
 
 function List(): JSX.Element {
     const { t } = useTranslation();
     const appointments = useAppSelector(state => state.appointment.appointments);
     const dispatch = useAppDispatch();
     const appointmentService = useService(AppointmentService);
+
+    useTitle(`Appointment Manager - ${t('appointments')}`)
 
     useEffect(() => {
         if(appointments.length === 0) {

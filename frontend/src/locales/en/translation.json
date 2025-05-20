@@ -25,5 +25,17 @@
     "delete_appointment": "Delete appointment",
     "pay": "Paid",
     "finished": "Finished",
-    "pending": "Pending"
+    "pending": "Pending",
+    "clientName": "Client name",
+    "clientName_required": "Client name is required",
+    "infos": "Details",
+    "infos_required": "Details are required",
+    "startDate": "Start date and time",
+    "startDate_required": "Start date and time is required",
+    "endDate": "End date and time",
+    "endDate_required": "End date and time is required",
+    "price": "Price",
+    "price_required": "Price is required",
+    "add_appointment": "Add appointment",
+    "free": "Free"
 }

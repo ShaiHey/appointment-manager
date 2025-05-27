@@ -11,6 +11,7 @@ export interface Appointment {
     price: number;
     finished: boolean;
     pay: boolean;
+    reminderSent: boolean;
 }
 
 const AppointmentSchema = new mongoose.Schema<Appointment>({
@@ -32,6 +33,10 @@ const AppointmentSchema = new mongoose.Schema<Appointment>({
         default: false
     },
     pay: {
+        type: Boolean,
+        default: false
+    },
+    reminderSent: {
         type: Boolean,
         default: false
     }

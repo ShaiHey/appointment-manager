@@ -37,5 +37,9 @@
     "price": "Prix",
     "price_required": "Le prix est requis",
     "add_appointment": "Ajouter un rendez-vous",
-    "free": "Gratuit"
+    "free": "Gratuit",
+    "statistics": "Statistiques",
+    "estimated_revenue_today": "CA estimé aujourd'hui",
+    "estimated_revenue_month": "CA estimé ce mois",
+    "today_appointments": "RDV aujourd'hui"
 }

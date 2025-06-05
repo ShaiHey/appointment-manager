@@ -5,6 +5,8 @@ services:
     container_name: database
     ports:
       - 27017:27017
+    environment:
+      - TZ=Asia/Jerusalem
     image: mongo:latest
     healthcheck:
       test: ["CMD-SHELL","mongosh", "db.runCommand('ping').ok"]
@@ -18,7 +20,15 @@ services:
       - 3000:3000
     environment:
       - NODE_ENV=compose
+      - TZ=Asia/Jerusalem
     build: ./backend
     depends_on:
       database:
         condition: service_healthy
+  frontend:
+    container_name: frontend
+    ports:
+      - 80:80
+    environment:
+      - TZ=Asia/Jerusalem
+    build: ./frontend

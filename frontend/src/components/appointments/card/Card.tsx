@@ -16,7 +16,7 @@ function Card({ appointment }: PropsCard): JSX.Element {
     const dispatch = useAppDispatch();
     const appointmentService = useService(AppointmentService);
 
-    const startDateFormat = new Intl.DateTimeFormat(`${i18n.language}-${i18n.language}`, {
+    const startDateFormat = new Intl.DateTimeFormat(i18n.language, {
         dateStyle: "full",
         timeStyle: "medium"
     }).format(new Date(appointment.startDate));

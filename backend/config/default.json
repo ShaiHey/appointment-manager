@@ -4,8 +4,8 @@
         "name": "Appointment Manager",
         "secret": "MySecret",
         "jwtSecret": "MyJwtSecret",
-        "lang": "fr",
-        "symbol": "$"
+        "lang": "en",
+        "symbol": "₪"
     },
     "mongoose": {
         "host": "localhost",
@@ -14,8 +14,8 @@
     },
     "mail": {
         "auth": {
-            "user": "chaiheyman1010@gmail.com",
-            "pass": "rfri ytks lleg bhow"
+            "user": "mail@gmail.com",
+            "pass": "appPasswordGmail"
         }
     }
 }

@@ -37,5 +37,9 @@
     "price": "מחיר",
     "price_required": "יש להזין מחיר",
     "add_appointment": "הוסף פגישה",
-    "free": "חינם"
+    "free": "חינם",
+    "statistics": "נתונים",
+    "estimated_revenue_today": "הכנסה מוערכת להיום",
+    "estimated_revenue_month": "הכנסה מוערכת לחודש",
+    "today_appointments": "פגישות היום"
 }

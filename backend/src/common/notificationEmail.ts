@@ -5,10 +5,11 @@ import { t } from '../lang/locales';
 
 async function checkUpcomingMeetingsAndSendEmails() {
     const now = new Date();
-    const oneHourLater = new Date(now.getTime() + 60 * 60 * 1000);
+    const fiveMinutesLater = new Date(now.getTime() + 5 * 60 * 1000);
+    const oneHourLater = new Date(now.getTime() + 65 * 60 * 1000);
 
     const appointments = await AppointmentModel.find({
-        startDate: { $gt: now, $lte: oneHourLater },
+        startDate: { $gt: fiveMinutesLater, $lte: oneHourLater },
         reminderSent: false,
         finished: false
     });
@@ -29,6 +30,6 @@ async function checkUpcomingMeetingsAndSendEmails() {
 
 console.log("Cron scheduler loaded");
 
-cron.schedule('*/30 * * * *', () => {
-  checkUpcomingMeetingsAndSendEmails();
+cron.schedule('*/5 * * * *', () => {
+    checkUpcomingMeetingsAndSendEmails();
 });

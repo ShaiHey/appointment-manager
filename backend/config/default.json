@@ -1,0 +1,21 @@
+{
+    "app": {
+        "port": 3000,
+        "name": "Appointment Manager",
+        "secret": "MySecret",
+        "jwtSecret": "MyJwtSecret",
+        "lang": "en",
+        "symbol": "₪"
+    },
+    "mongoose": {
+        "host": "localhost",
+        "port": 27017,
+        "database": "appointmentApp"
+    },
+    "mail": {
+        "auth": {
+            "user": "mail@gmail.com",
+            "pass": "appPasswordGmail"
+        }
+    }
+}

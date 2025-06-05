@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" {{#if isRTL}}dir="rtl" {{/if}}>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{emailSubject}}</title>
+    <style>
+        .rtl {
+            direction: rtl;
+        }
+    </style>
+</head>
+
+<body class="{{#if isRTL}}rtl{{/if}}">
+    <div style="font-family: Arial, sans-serif; padding: 20px; line-height: 1.5; color: #333;">
+        <h2>{{emailSubject}}</h2>
+        <p>{{hello}} {{firstName}} {{lastName}},</p>
+        <p>{{youHaveAppointment}} :</p>
+        <ul style="padding-left: 20px;">
+            <li><strong>{{withClient}}:</strong> {{clientName}}</li>
+            <li><strong>{{date_label}}</strong> {{date}}</li>
+            <li><strong>{{time_label}}</strong> {{time}}</li>
+            <li><strong>{{price_label}}</strong> {{price}}</li>
+            <li><strong>{{infos_label}}</strong> {{infos}}</li>
+        </ul>
+        <p>{{thankYou}}</p>
+        <p style="margin-top: 20px;"><em>{{signature}}</em></p>
+    </div>
+</body>
+
+</html>

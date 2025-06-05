@@ -18,7 +18,7 @@
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/appointment-manager.git
+git clone https://github.com/ShaiHey/appointment-manager.git
 cd appointment-manager
 ```
 

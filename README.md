@@ -13,6 +13,20 @@
 
 ---
 
+## 🧪 Demo
+
+You can try a live demo of the project here:
+
+🔗 [https://appointment.shaiheyman.com](https://appointment.shaiheyman.com)
+
+**Test Login Credentials:**
+* 📧 Email: `test@test.com`
+* 🔐 Password: `123456`
+
+> 📝 The demo is fully functional, including appointment creation, reminders, multilingual UI, and statistics.
+
+---
+
 ## 🛠️ Installation
 
 ### 1. Clone the repository
